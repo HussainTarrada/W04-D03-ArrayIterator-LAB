@@ -211,8 +211,10 @@ let firstLast = [];
 
 firstLast = people.map((element)=>{
   const lastNames = element.split(",",1)
+  // console.log("LASTNAME", lastNames)
   const firstNames = element.split(",")
-  return  lastNames
+  // console.log("FIRSTNAME", firstNames)
+  return  firstNames[1] + " " + lastNames
 })
 
 // Check your work:
